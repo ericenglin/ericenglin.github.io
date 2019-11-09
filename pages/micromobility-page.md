@@ -7,18 +7,53 @@
 ### 1. Data Collection
 
 
-```javascript
-if (isAwesome){
-  return true
-}
+```python
+
+# import the necessary libraries
+from bs4 import BeautifulSoup
+import requests
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+import pandas as pd
+
 ```
+
+```python
+
+df = pd.read_excel("Micromobility news links.xlsx") #add our micromobility news articles into a dataframe
+
+comment_words = ' '
+token_list = []
+
+for x in df['Link']: #loop through each link
+    link = x
+    my_page = requests.get(link)
+    soup = BeautifulSoup(my_page.content, 'html.parser')
+    for val in soup.find_all("p"):
+
+        # typecaste each val to string
+        val = str(val.get_text().strip())
+
+        # split the value
+        tokens = val.split() 
+
+        # Converts each token into lowercase
+        for i in range(len(tokens)):
+            tokens[i] = tokens[i].lower()
+
+        for words in tokens:
+            comment_words = comment_words + words + " "
+            token_list.append(words)
+
+```
+
 
 ### 2. Analysis
 
 #### a. Word Cloud
 
 ```javascript
-# import the necessary libraries
+
 from bs4 import BeautifulSoup
 import requests
 from wordcloud import WordCloud, STOPWORDS
