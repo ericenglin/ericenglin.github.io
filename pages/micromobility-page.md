@@ -168,6 +168,13 @@ def rightTypesTri(ngram):
 filtered_tri = trigramFreqTable[trigramFreqTable.trigram.map(lambda x: rightTypesTri(x))]
 ```
 
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
+
+
 ```html
 <table border="1" class="dataframe">
   <thead>
