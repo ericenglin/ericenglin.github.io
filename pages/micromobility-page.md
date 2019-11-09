@@ -122,12 +122,18 @@ trigramFinder = nltk.collocations.TrigramCollocationFinder.from_words(token_list
 
 #bigrams
 bigram_freq = bigramFinder.ngram_fd.items()
-bigramFreqTable = pd.DataFrame(list(bigram_freq), columns=['bigram','freq']).sort_values(by='freq', ascending=False)
+bigramFreqTable = pd.DataFrame(list(bigram_freq),
+  columns=['bigram','freq']).sort_values(by='freq',
+                                ascending=False)
 
 #trigrams
 trigram_freq = trigramFinder.ngram_fd.items()
-trigramFreqTable = pd.DataFrame(list(trigram_freq), columns=['trigram','freq']).sort_values(by='freq', ascending=False)
+trigramFreqTable = pd.DataFrame(list(trigram_freq),
+        columns=['trigram','freq']).sort_values(by='freq',
+                                        ascending=False)
 ```
+
+Once we've created these functions, we can call on them to create our ngrams and make some tables showing the frequency that each n-gram appears in all of our articles.
 
 
 ```python
@@ -139,8 +145,13 @@ def rightTypes(ngram):
     for word in ngram:
         if word in stopwords or word.isspace():
             return False
-    acceptable_types = ('JJ', 'JJR', 'JJS', 'NN', 'NNS', 'NNP', 'NNPS')
-    second_type = ('NN', 'NNS', 'NNP', 'NNPS')
+    acceptable_types = ('JJ', 'JJR',
+                        'JJS', 'NN',
+                        'NNS', 'NNP',
+                        'NNPS')
+
+    second_type = ('NN', 'NNS',
+                  'NNP', 'NNPS')
     tags = nltk.pos_tag(ngram)
     if tags[0][1] in acceptable_types and tags[1][1] in second_type:
         return True
@@ -157,8 +168,16 @@ def rightTypesTri(ngram):
     for word in ngram:
         if word in stopwords or word.isspace():
             return False
-    first_type = ('JJ', 'JJR', 'JJS', 'NN', 'NNS', 'NNP', 'NNPS')
-    third_type = ('JJ', 'JJR', 'JJS', 'NN', 'NNS', 'NNP', 'NNPS')
+    first_type = ('JJ', 'JJR',
+                  'JJS', 'NN',
+                  'NNS', 'NNP',
+                  'NNPS')
+
+    third_type = ('JJ', 'JJR',
+                  'JJS', 'NN',
+                  'NNS', 'NNP',
+                  'NNPS')
+
     tags = nltk.pos_tag(ngram)
     if tags[0][1] in first_type and tags[2][1] in third_type:
         return True
@@ -168,231 +187,115 @@ def rightTypesTri(ngram):
 filtered_tri = trigramFreqTable[trigramFreqTable.trigram.map(lambda x: rightTypesTri(x))]
 ```
 
-| Priority apples | Second priority | Third priority |
+Trigram Table:
+
+| Trigram | # of Times Seen |
 |-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
+| split, phase | 30 |
+| crash rates | 21 |
+| camden, nj | 14 |
+| crash rate | 13 |
+| red line | 13 |
+| pbl installation | 12 |
+| comfort, safety | 11 |
+| transit feeder | 10 |
+| linear regression | 9 |
+| los angeles | 8 |
+| auto lanes | 8 |
+| higher turn | 7 |
+| main effects | 7 |
+| sample size | 7 |
+| pogo sticks | 7 |
+| united states | 7 |
+| masoud, et | 6 |
+| electric bikes | 6 |
 
 
-```html
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>trigram</th>
-      <th>freq</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>3614</th>
-      <td>(camden,, nj, —)</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>14748</th>
-      <td>(metro, red, line)</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>21801</th>
-      <td>(pbl, installation, table)</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>14533</th>
-      <td>(appropriate, software, installed,)</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>14429</th>
-      <td>(lean, library, here.)</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>14538</th>
-      <td>(download, article, citation)</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>14548</th>
-      <td>(choice., simply, select)</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>15023</th>
-      <td>(masoud, et, al.)</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>21546</th>
-      <td>(=, average, annual)</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>4194</th>
-      <td>(vincent, deblasio, camden,)</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>4195</th>
-      <td>(deblasio, camden,, nj)</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>21150</th>
-      <td>(study, sample, size)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>19716</th>
-      <td>(split, phase, intersections)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>19688</th>
-      <td>(higher, turn, volume)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>19659</th>
-      <td>(crashes, per, bicyclist)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>7905</th>
-      <td>(international, municipal, lawyers)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>21976</th>
-      <td>(split, phase, locations)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>21161</th>
-      <td>(bicyclist, injury, crashes)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>15028</th>
-      <td>(transit, feeder, system)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>14514</th>
-      <td>(can:, need, help?)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14516</th>
-      <td>(help?, contact, sage)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14596</th>
-      <td>(content:, sharing, links)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>9135</th>
-      <td>(energy,, green, building,)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>9136</th>
-      <td>(green, building,, transportation,)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>9137</th>
-      <td>(building,, transportation,, waste)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>9138</th>
-      <td>(transportation,, waste, solutions,)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>9139</th>
-      <td>(waste, solutions,, connectivity,)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14527</th>
-      <td>(email, alerts, contents)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>9140</th>
-      <td>(solutions,, connectivity,, policy)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14566</th>
-      <td>(article, via, social)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14609</th>
-      <td>(sage, journals, article)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14611</th>
-      <td>(article, sharing, page.)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>20390</th>
-      <td>(current-generation, mixing, zone)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>5852</th>
-      <td>(traffic, safety, administration)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>5851</th>
-      <td>(highway, traffic, safety)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14631</th>
-      <td>(journals, sharing, page.)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>14654</th>
-      <td>(conditions, view, permissions)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>19530</th>
-      <td>(draft, manuscript, preparation:)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>19501</th>
-      <td>(authors, confirm, contribution)</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>4214</th>
-      <td>(tapinto, camden, staff)</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
+Bigram Table:
+
+| Bigram | # of Times Seen |
+|-------|--------|---------|
+| camden,, nj, — | 14 |
+| metro, red, line | 7  |
+| pbl, installation, table | 6  |
+| appropriate, software, installed | 6  |
+| lean, library, here | 6  |
+| download, article, citation | 6  |
+| masoud, et, al. | 5  |
+| study, sample, size | 4  |
+| split, phase, intersections | 4  |
+| higher, turn, volume | 4  |
+| crashes, per, bicyclist | 4  |
+| international, municipal, lawyers | 4 |
+| bicyclist, injury, crashes | 4 |
+| split, phase, locations | 4 |
+| energy,, green, building | 3 |
+| building,, transportation,, waste | 3 |
+
+
+
+
+### 3. Collect more data
+
+#### A. Google News API
+
+The Bigram and Trigrams give a little bit more information, but this definitely isn't sufficient to have an understanding of micromobility news happening in any given quarter. Now it is clear that we'll need collect more data. We'll do this by calling on the Google News API and trying to grab as many articles as we can -- the Google News API only allows information for the last 30 days, so we will want to grab as many articles as possible in this timeframe.
+
+
+```python
+
+from newsapi.newsapi_client import NewsApiClient
+# Init
+newsapi = NewsApiClient(api_key=api_key['App Key'].iloc[0])
+
+from datetime import datetime, timedelta
+from_time = datetime.strftime(datetime.now() - timedelta(31), '%Y-%m-%d')
+to_time = datetime.strftime(datetime.now(), '%Y-%m-%d')
+
+# Free plan only allows up to 100 articles taken at one time
+from datetime import datetime, timedelta
+
+title = []
+url = []
+author = []
+publish_date = []
+content = []
+
+for num in range(1,30):
+
+    from_time = datetime.strftime(datetime.now() - timedelta(num+1),
+                                                  '%Y-%m-%d')
+    to_time = datetime.strftime(datetime.now() - timedelta(num),
+                                                  '%Y-%m-%d')
+
+    for page_num in range(1,5):
+        top_headlines = newsapi.get_everything(q='scooter',
+                                           from_param=from_time,
+                                          to=to_time,
+                                           page=page_num,
+                                              language='en')       
+    for x in top_headlines['articles']:
+        title.append(x['title'])
+        url.append(x['url'])
+        author.append(x['source']['id'])
+        publish_date.append(x['publishedAt'])
+        content.append(x['content'])
+
+#make dataframe
+df = pd.DataFrame({
+    'Title':title,
+    'URL':url,
+    'Author':author,
+    'Date Published':publish_date,
+    'Content':content})
+
 ```
 
-### 3. Support the selection of appropriate statistical tools and techniques
+### 4. Next Steps: Machine Learning Classification
 
+This Google News API allowed us to get 497 articles for the month of October. We will want to recreate our scraper from above and grab our contents again. However, rather than jumping into a WordCloud and N-gram tokens, we'll want to go a step further. For a subsection of these articles, I want to create classifications of the articles based on content area. From here, we can use these to create more precise NLP analyses that will allow us to look at new text being used in each specific area. For example, we'll want to know what terms are newly being used in safety articles compared to technology articles.
 
-### 4. Provide a basis for further data collection through surveys or experiments
+More to come on this front!
 
 
 For more details see [Full Github Repo](https://github.com/ericenglin/Micromobility-Text-Analysis).
