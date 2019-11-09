@@ -1,10 +1,11 @@
-## This can be your internal website page / project page
+## Micromobility Text Analysis
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** This is a simple webscraper that builds a word cloud and makes bigrams & trigrams. All code can be found in jupyter notebook file. Articles have been compiled throughout the summer of 2019. This analysis uses a subset of these articles as a quick attempt to find useful information. All articles can be found in the xlsx file or in the jupyter notebook.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+### 1. Data Collection
+
 
 ```javascript
 if (isAwesome){
@@ -12,12 +13,18 @@ if (isAwesome){
 }
 ```
 
-### 2. Assess assumptions on which statistical inference will be based
+### 2. Analysis
+
+#### a. Word Cloud
 
 ```javascript
-if (isAwesome){
-  return true
-}
+# import the necessary libraries
+from bs4 import BeautifulSoup
+import requests
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+import pandas as pd
+
 ```
 
 ### 3. Support the selection of appropriate statistical tools and techniques
