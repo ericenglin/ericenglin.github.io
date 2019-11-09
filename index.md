@@ -11,12 +11,10 @@
 
 ---
 
-### Category Name 1
-
-[Tableau Public Projects](https://public.tableau.com/profile/ericenglin#!/)
-<img src="images/Tableau-Public.png?raw=true"/>
+### Transportation Projects
 
 ---
+
 [Amtrak Ridership Visualization](https://github.com/ericenglin/Amtrak-Web-Scraper)
 <img src="images/Amtrak-Ridership.png?raw=true"/>
 
@@ -25,8 +23,28 @@
 <img src="images/NPS-Site-Screenshot.png?raw=true"/>
 
 ---
+[Micromobility Text Analysis](./pages/micromobility-page.md)
+<img src="images/micromobility-word-cloud.png?raw=true"/>
 
 
+---
+
+### Hawaii Homelessness Projects
+
+[Tableau Public Projects](https://public.tableau.com/profile/ericenglin#!/)
+<img src="images/Tableau-Public.png?raw=true"/>
+
+---
+
+
+---
+
+### Harvard School Projects
+
+[Tableau Public Projects](https://public.tableau.com/profile/ericenglin#!/)
+<img src="images/Tableau-Public.png?raw=true"/>
+
+---
 
 
 ---
