@@ -41,7 +41,7 @@
 
 ### Harvard School Projects
 
-[Tableau Public Projects](https://public.tableau.com/profile/ericenglin#!/)
-<img src="images/Tableau-Public.png?raw=true"/>
+[Tableau Public Projects](./pages/harvard-schoolwork.md)
+<img src="images/NYC-gentrification.png?raw=true"/>
 
 ---
