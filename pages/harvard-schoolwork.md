@@ -10,6 +10,8 @@ Major projects include: [NYC Gentrification Predictions](https://github.com/eric
 
 All code in R.
 
+<img src="images/NYC-gentrification.png?raw=true"/>
+
 
 ### Data Science
 
@@ -18,4 +20,8 @@ This course involves many similar machine learning models as the previous course
 Final project involves using social media data to predict election outcomes. That can be found in [in this repo](https://github.com/jschneids13/CS109a-Group-81-Final-Project).
 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Land Use and Zoning
+
+This course required a review of the Cambridge city zoning codes and a paper talking about one improvement to this code. I created a geospatial analysis using Python and Geopandas. Full repo [here](https://github.com/ericenglin/cambridge-property-analysis)
+
+<img src="images/Eligible-Lots.png?raw=true"/>

@@ -296,6 +296,3 @@ df = pd.DataFrame({
 This Google News API allowed us to get 497 articles for the month of October. We will want to recreate our scraper from above and grab our contents again. However, rather than jumping into a WordCloud and N-gram tokens, we'll want to go a step further. For a subsection of these articles, I want to create classifications of the articles based on content area. From here, we can use these to create more precise NLP analyses that will allow us to look at new text being used in each specific area. For example, we'll want to know what terms are newly being used in safety articles compared to technology articles.
 
 More to come on this front!
-
-
-For more details see [Full Github Repo](https://github.com/ericenglin/Micromobility-Text-Analysis).
