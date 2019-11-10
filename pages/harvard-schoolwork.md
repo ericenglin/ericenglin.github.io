@@ -10,7 +10,7 @@ Major projects include: [NYC Gentrification Predictions](https://github.com/eric
 
 All code in R.
 
-<img src="images/NYC-gentrification.png?raw=true"/>
+<img src="./../images/NYC-gentrification.png?raw=true"/>
 
 
 ### Data Science
@@ -24,4 +24,4 @@ Final project involves using social media data to predict election outcomes. Tha
 
 This course required a review of the Cambridge city zoning codes and a paper talking about one improvement to this code. I created a geospatial analysis using Python and Geopandas. Full repo [here](https://github.com/ericenglin/cambridge-property-analysis)
 
-<img src="images/Eligible-Lots.png?raw=true"/>
+<img src="./../images/Eligible-Lots.png?raw=true"/>
