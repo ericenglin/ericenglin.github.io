@@ -41,7 +41,6 @@
 
 ### Harvard School Projects
 **[Repo](./pages/harvard-schoolwork.md)**
-[Tableau Public Projects]()
 <img src="images/NYC-gentrification.png?raw=true"/>
 
 ---
