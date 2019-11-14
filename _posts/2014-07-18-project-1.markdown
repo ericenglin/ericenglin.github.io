@@ -7,6 +7,6 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: Micromobility is a trendy catch-all term for small modes of transportation that are coming into streets around the world. As a general definition, micromobility is a category of modes of transport that are provided by very light vehicles such as electric scooters, electric skateboards, shared bicycles and electric pedal assisted, pedelec, bicycles. The primary condition for inclusion in the category is a gross vehicle weight of less than 500 kg. This is still a developing field with new trends every day (see: pogo sticks).
+description: Micromobility is a trendy catch-all term for small modes of transportation that are coming into streets around the world.
 
 ---
