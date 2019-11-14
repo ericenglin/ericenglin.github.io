@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 6
+date: 2014-07-15
+img: submarine.png
+alt: image-alt
+project-date: July 2019
+client: U.S. Travel & Tourism
+category: Web Scraping & Data Visualization
+description: Amtrak
+
+---
