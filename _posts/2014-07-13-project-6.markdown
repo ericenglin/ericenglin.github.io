@@ -2,7 +2,7 @@
 layout: default
 modal-id: 6
 date: 2014-07-15
-img: safe.png
+img: Amtrak-Ridership.png
 alt: image-alt
 project-date: July 2019
 client: U.S. Travel & Tourism
