@@ -7,7 +7,6 @@ alt: image-alt
 project-date: June 2019
 client: U.S. Travel & Tourism
 category: Web Scraping & Data Visualization
-description: Air travel has been steadily increasing in just about every airport in the U.S. However, this increase is not uniform and likely reflects project investments by the FAA and other government agencies.
-ull repo available <a href="https://ericenglin.github.io/FAA-Flight-Visual/">here</a>.
+description: Air travel has been steadily increasing in just about every airport in the U.S. However, this increase is not uniform and likely reflects project investments by the FAA and other government agencies. Full repo available <a href="https://ericenglin.github.io/FAA-Flight-Visual/">here</a>.
 
 ---
