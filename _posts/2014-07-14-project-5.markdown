@@ -2,7 +2,7 @@
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: NPS-Site-Screenshot.png
+img: nps.jpg
 alt: image-alt
 project-date: July 2019
 client: Start Bootstrap
