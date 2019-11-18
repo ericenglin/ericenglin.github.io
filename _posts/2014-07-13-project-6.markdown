@@ -7,6 +7,6 @@ alt: image-alt
 project-date: July 2019
 client: U.S. Travel & Tourism
 category: Web Scraping & Data Visualization
-description: This is a web scraper to download PDFs on Amtrak usage at stations across the U.S. from 2012-2018. Raw PDFs were downloaded at the station level and the state level (both csv’s included here). From there, the program will scrape the graph for the last 6 years of ridership from each PDF document. Some stations have discontinued services in the last 6 years, and the program will flag these stations. Final data is posted as data visuals. Final visuals shown at [this link](https://ericenglin.github.io/Amtrak-Web-Scraper/)
+description: This is a web scraper to download PDFs on Amtrak usage at stations across the U.S. from 2012-2018. Raw PDFs were downloaded at the station level and the state level (both csv’s included here). From there, the program will scrape the graph for the last 6 years of ridership from each PDF document. Some stations have discontinued services in the last 6 years, and the program will flag these stations. Final data is posted as data visuals. Final visuals shown at <a href="https://ericenglin.github.io/Amtrak-Web-Scraper/">this link</a>
 
 ---
