@@ -7,6 +7,6 @@ alt: image-alt
 project-date: December 2018
 client: Start Bootstrap
 category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description: This was a final project for Harvard Kennedy School's Machine Learning course. The project used NYU's gentrification criteria from 2015 to forecast future gentrification in New York City in 2025. Full analysis, along with final report & analysis are available <a href="https://github.com/ericenglin/Machine-Learning-and-Statistics-Assignments/tree/master/NYC%20Gentrification%20Prediction">at this location</a>.
 
 ---

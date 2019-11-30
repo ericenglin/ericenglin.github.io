@@ -7,6 +7,6 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description: This analysis looks into the property dataset on Cambridge Open Data portal. The maps created and analysis were used for Harvard Graduate School of Design's Land Use Law Zoning Code Exercise where we are meant to analyze an existing zoning code and propose beneficial changes. My paper is about the eligible lots for ADUs and how criteria can be relaxed to encourage development. Full repo is available <a href = "https://ericenglin.github.io/cambridge-property-analysis/"> here</a>. 
 
 ---
