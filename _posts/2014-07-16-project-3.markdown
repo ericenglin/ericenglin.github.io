@@ -7,6 +7,6 @@ alt: image-alt
 project-date: February 2017
 client: Start Bootstrap
 category: Web Development
-description: I have experience working with stakeholders in Hawaii on affordable housing and homelessness. Most of this work involved tracking community performance metrics in ending homelessness and coordinating homeless service providers to more efficiently operate and serve needs of the community. Some of these dashboards are posted onto my Tableau Public profile:<a href="https://public.tableau.com/profile/ericenglin#!/">
+description: I have experience working with stakeholders in Hawaii on affordable housing and homelessness. Most of this work involved tracking community performance metrics in ending homelessness and coordinating homeless service providers to more efficiently operate and serve needs of the community. Some of these dashboards are posted onto my Tableau Public profile:[Tableau link](https://public.tableau.com/profile/ericenglin#!)
 
 ---
