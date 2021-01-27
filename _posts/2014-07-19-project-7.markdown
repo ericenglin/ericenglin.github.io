@@ -1,15 +1,13 @@
 ---
 layout: default
 modal-id: 7
-date: 2014-07-15
+date: 2021-01-21
 img: airplane.jpg
 alt: image-alt
 project-date: June 2019
 client: U.S. Travel & Tourism I
 category: Web Scraping & Data Visualization
-description: Air travel has been steadily increasing in just about every airport in the U.S. However, this increase is not uniform and likely reflects project investments by the FAA and other government agencies. Full repo available <a href="https://ericenglin.github.io/FAA-Flight-Visual/">here</a>.
-
-In 2021, the final strategic plan was posted online and sent to Congress. The public version is detailed on <a href = "https://www.transportation.gov/NACTTI">this U.S. Department of Transportation website</a>
+description: Air travel has been steadily increasing in just about every airport in the U.S. However, this increase is not uniform and likely reflects project investments by the FAA and other government agencies. Full repo available <a href="https://ericenglin.github.io/FAA-Flight-Visual/">here</a>.<br><br>In 2021, the final strategic plan was posted online and sent to Congress. The public version is detailed on <a href = "https://www.transportation.gov/NACTTI">this U.S. Department of Transportation website</a>
 
 
 ---

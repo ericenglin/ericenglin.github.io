@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 8
+date: 2020-05-01
+img: FoodForFree.png
+alt: image-alt
+project-date: May 2020
+client: Food For Free
+category: Web Development, Machine Learning
+description: When the coronavirus pandemic started in early 2020, Food For Free needed help routing drivers to homes of people that needed food pantry supplies but didn't want to or weren't able to leave their house. I developed a machine learning clustering algorithm to group nearby house locations that could be dynamical to the number of drivers that would show up every day. This algorithm was hosted with a Google Sheet backend that used a website interface to allow Food For Free to enter information on addresses that required supplies and the number of drivers that would be coming in that day. Food For Free used this program from April 2020 to 2021. The full github repo is available <a href = "https://github.com/ericenglin/Food-Dropoff">here</a>. Food For Free wrote a <a href = "https://foodforfree.org/geo-coding-to-the-rescue/">blog post</a> on the topic with more detailed information. 
+
+
+---
