@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 2
-date: 2014-07-17
+date: 2019-11-01
 img: Eligible-Lots.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: This analysis looks into the property dataset on Cambridge Open Data portal. The maps created and analysis were used for Harvard Graduate School of Design's Land Use Law Zoning Code Exercise where we are meant to analyze an existing zoning code and propose beneficial changes. My paper is about the eligible lots for ADUs and how criteria can be relaxed to encourage development. Full repo is available <a href = "https://ericenglin.github.io/cambridge-property-analysis/"> here</a>. 
+project-date: Fall 2019
+client: Harvard Class on Land Use and Zoning
+category: Data Science
+description: This analysis looks into the property dataset on Cambridge Open Data portal. The maps created and analysis were used for Harvard Graduate School of Design's Land Use Law Zoning Code Exercise where we are meant to analyze an existing zoning code and propose beneficial changes. My paper is about the eligible lots for ADUs and how criteria can be relaxed to encourage development. Full repo is available <a href = "https://ericenglin.github.io/cambridge-property-analysis/"> here</a>.
 
 ---

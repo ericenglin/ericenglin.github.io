@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 3
-date: 2014-07-16
+date: 2016-07-16
 img: Tableau-Public.png
 alt: image-alt
-project-date: February 2017
-client: Start Bootstrap
-category: Web Development
+project-date: 2016-2018
+client: City & County of Honolulu
+category: Data Visualization
 description: I have experience working with stakeholders in Hawaii on affordable housing and homelessness. Most of this work involved tracking community performance metrics in ending homelessness and coordinating homeless service providers to more efficiently operate and serve needs of the community. Some of these dashboards are posted onto <a href = "https://public.tableau.com/profile/ericenglin#!"> my Tableau Public profile</a>.
 
 ---

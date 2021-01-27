@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 5
-date: 2014-07-14
+date: 2019-08-01
 img: nps.jpg
 alt: image-alt
-project-date: July 2019
-client: Start Bootstrap
-category: Web Development
+project-date: August 2019
+client: National Park Service
+category: Natural Language Processing
 description: This project created a webscraper and simple natural language processing search to identify and analyze the transportation information on the 400 U.S. national park websites. It uses a chromedriver webscraper that looks at over 10,000 total NPS websites. The NLP algorithm uses these web pages to carry out a keyword and key phrase search and scoring criteria. Full repo available  <a href="https://github.com/ericenglin/NPS-Website-Scrape">at this location</a>.
 
 ---

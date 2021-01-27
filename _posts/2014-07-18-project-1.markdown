@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 1
-date: 2014-07-18
+date: 2019-09-01
 img: micromobility-word-cloud.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
+project-date: Summer 2019
+client: FHWA
+category: Natural Language Processing
 description: Micromobility is a trendy catch-all term for small modes of transportation that are coming into streets around the world. As a general definition, micromobility is a category of modes of transport that are provided by very light vehicles such as electric scooters, electric skateboards, shared bicycles and electric pedal assisted bicycles. Full repo is available <a href = "https://ericenglin.github.io/Micromobility-Text-Analysis/"> at this github repo</a>.
 
 ---
